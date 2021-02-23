@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+    <meta charset="utf-8">
+    <title>WAY</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+    <h1>ThreeSixty.js</h1>
+    <p>Drag, use keyboard arrows (&larr; & &rarr;) or click to rotate image.</p>
+    <p>
+      <a class="g-hub" href="https://github.com/mladenilic/threesixty" target="_blank">Check out ThreeSixty.js on Github</a>
+    </p>
+  	<div id="threesixty"></div>
+    <div class="buttons-wrapper">
+      <button class="button" id="prev">Prev</button>
+  	  <button class="button" id="next">Next</button>
+    </div>
+  </div>
+
+    <script>var threesixty = new ThreeSixty(document.getElementById('threesixty'), {
+  image: 'https://s3.eu-central-1.amazonaws.com/threesixty.js/watch.jpg',
+  width: 320,
+  height: 320,
+  count: 31,
+  perRow: 4,
+  speed: 100,
+  prev: document.getElementById('prev'),
+  next: document.getElementById('next')
+});
+
+threesixty.play();</script>
+  </body>
+</html>
